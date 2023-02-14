@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## descargar module para json-server
+
+npm install -g json-server
+
+## correr json-server
+
+para correr json-server en el proyecto --> npm run database
+
+database es el alias que se puso al watch en package.json --> "database": "json-server --watch ./src/app/data/bd.json")
+el comando --watch es para que quede acessible nuestro json como servidor para peticiones http y demas
+
+
