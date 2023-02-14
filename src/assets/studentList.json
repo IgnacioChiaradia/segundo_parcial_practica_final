@@ -1,0 +1,26 @@
+[
+    {
+        "studentId": 1,
+        "careerId": 2,
+        "firstName": "Licensed Frozen Hat",
+        "lastName": "Incidunt et magni est ut.",
+        "email": "pepe@gmail.com",
+        "isActive": true
+    },
+    {
+        "studentId": 2,
+        "careerId": 2,
+        "firstName": "student two",
+        "lastName": "Incidunt et magni est ut.",
+        "email": "pepe@gmail.com",
+        "isActive": true
+    },
+    {
+        "studentId": 3,
+        "careerId": 2,
+        "firstName": "student three",
+        "lastName": "Incidunt et magni est ut.",
+        "email": "pepe@gmail.com",
+        "isActive": true
+    }
+]
