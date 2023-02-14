@@ -6,8 +6,8 @@ import { StudentListComponent } from './components/student-list/student-list.com
 
 const routes: Routes = [
   {path: "listStudents", component: StudentListComponent},
-  //{path: "addScore/:id", component: ScoreAddComponent},
-  {path: "addScore", component: ScoreAddComponent},
+  {path: "addScore/:id", component: ScoreAddComponent},
+  //{path: "addScore", component: ScoreAddComponent},
   {path: "listScores", component: ScoreListComponent},
   {path: '', redirectTo: "/listStudents", pathMatch: "full"}
 ];

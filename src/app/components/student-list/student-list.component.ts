@@ -19,9 +19,7 @@ export class StudentListComponent implements OnInit {
     this.getStudents();
 
     this.getCareers();
-    //console.log(this.studentList);    
-
-    //this.studentService.getStudentsService().subscribe((tareas) => (this.studentList = tareas))    
+    this.studentService.getStudentsService().subscribe((tareas) => (this.studentList = tareas))    
     
   }
 

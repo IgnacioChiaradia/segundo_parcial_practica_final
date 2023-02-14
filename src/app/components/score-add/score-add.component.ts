@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-score-add',
@@ -7,13 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScoreAddComponent implements OnInit {
 
-  constructor() { }
+  studentId: number;
+
+  constructor(private _route:ActivatedRoute) { }
 
   ngOnInit(): void {
 
-    //let studentId = Number(this.route.snapshot.paramMap.get('id'));
+    this.studentId = Number(this._route.snapshot.paramMap.get('id'));
 
-    console.log("student");
+    console.log("student ", this.studentId);
     
 
   }
