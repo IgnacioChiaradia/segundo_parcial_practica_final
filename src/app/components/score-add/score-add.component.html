@@ -1,4 +1,38 @@
 <div class="container">
-    <h2>Create New Score</h2>
-    <p>{{ studentId }}</p>
+  <h2>Create New Score</h2>
+  <form [formGroup]="scoreForm" (ngSubmit)="onSubmit()" class="row g-3">
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" formControlName="email" class="form-control" id="email">
+      </div>
+      <div class="col-md-6">
+        <label for="subject" class="form-label">Subject</label>
+        <select formControlName="subject" id="subject" class="form-select">
+          <option selected disabled>Choose...</option>
+          <option *ngFor="let subject of subjectList" [value]="subject.subjectId">{{subject.name}}</option>
+        </select>
+      </div>
+      <div class="col-1">
+        <label for="score" class="form-label">Score</label>
+        <input type="number" [min]="1" [max]="10" formControlName="score"  class="form-control" id="score" placeholder="1 to 10">
+      </div>
+      <div class="col-11">
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary" [disabled]="!scoreForm.valid">Save Score</button>
+      </div>
+      <div class="col-12" *ngIf="!email.valid && (email.dirty || email.touched)">
+        <div class="col-lg-12">
+          <div class="alert alert-danger" role="alert" *ngIf="email.errors?.required">
+              Email is required
+          </div>
+          <div class="alert alert-danger" role="alert" *ngIf="email.errors?.emailValidatorChar">
+            Email is not in the db
+        </div>
+        </div>
+      </div>
+      <div class="col-12 alert alert-success" role="alert" *ngIf="message != null">
+        {{message}}
+      </div>
+  </form>
 </div>

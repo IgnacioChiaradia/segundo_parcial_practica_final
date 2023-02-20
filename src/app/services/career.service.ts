@@ -11,7 +11,7 @@ export class CareerService {
   constructor(private httpClient : HttpClient) { }
 
   getCareers() {
-    return this.httpClient.get(this.url + "career");        
+    return this.httpClient.get(this.url + "careers");        
   }
 
 

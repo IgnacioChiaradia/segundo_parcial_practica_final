@@ -6,15 +6,19 @@ import { HttpClient } from '@angular/common/http';
 })
 export class StudentService {
 
-  url = "http://localhost:3000/";
+  url = "http://localhost:3000/students";
 
   constructor(private httpClient : HttpClient) { }
 
   getStudentsService(){
-    return this.httpClient.get(this.url + "students");
+    return this.httpClient.get(this.url);
   }
 
   getStudentById(studentId : number){
-    return this.httpClient.get(this.url + "students?studentId=" + studentId);
+    return this.httpClient.get(this.url + "?studentId=" + studentId);
+  }
+
+  getStudentByEmail(email : string){
+    return this.httpClient.get(this.url + "?email=" + email);
   }
 }

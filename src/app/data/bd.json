@@ -1,70 +1,102 @@
 {
-    "students":[
-        {
-            "studentId": 1,
-            "careerId": 2,
-            "firstName": "one",
-            "lastName": "rodriguez",
-            "email": "pepe@gmail.com",
-            "isActive": true
-        },
-        {
-            "studentId": 2,
-            "careerId": null,
-            "firstName": "two",
-            "lastName": "gonzales",
-            "email": "2@gmail.com",
-            "isActive": true
-        },
-        {
-            "studentId": 3,
-            "careerId": 2,
-            "firstName": "three",
-            "lastName": "gomez",
-            "email": "4@gmail.com",
-            "isActive": true
-        },
-        {
-            "studentId": 4,
-            "careerId": 2,
-            "firstName": "cuatro",
-            "lastName": "bbb",
-            "email": "5@gmail.com",
-            "isActive": false
-        },
-        {
-            "studentId": 5,
-            "careerId": 2,
-            "firstName": "cinco",
-            "lastName": "ccc",
-            "email": "6@gmail.com",
-            "isActive": false
-        },
-        {
-            "studentId": 6,
-            "careerId": 1,
-            "firstName": "seis",
-            "lastName": "ddd",
-            "email": "7@gmail.com",
-            "isActive": true
-        }
-    ],
-    "career":[
-        {
-            "careerId": 2,
-            "name": "TUP",
-            "isActive": true
-        },
-        {
-            "careerId": 1,
-            "name": "TUSI",
-            "isActive": true
-        }
-    ],
-    "subject":[
-        {
-            "subjectId": 1,
-            "name": "ingles2"
-        }
-    ]
+  "students": [
+    {
+      "studentId": 1,
+      "careerId": 2,
+      "firstName": "one",
+      "lastName": "rodriguez",
+      "email": "pepe@gmail.com",
+      "isActive": true
+    },
+    {
+      "studentId": 2,
+      "careerId": null,
+      "firstName": "two",
+      "lastName": "gonzales",
+      "email": "2@gmail.com",
+      "isActive": true
+    },
+    {
+      "studentId": 3,
+      "careerId": 2,
+      "firstName": "three",
+      "lastName": "gomez",
+      "email": "4@gmail.com",
+      "isActive": true
+    },
+    {
+      "studentId": 4,
+      "careerId": 2,
+      "firstName": "cuatro",
+      "lastName": "bbb",
+      "email": "5@gmail.com",
+      "isActive": false
+    },
+    {
+      "studentId": 5,
+      "careerId": 2,
+      "firstName": "cinco",
+      "lastName": "ccc",
+      "email": "6@gmail.com",
+      "isActive": false
+    },
+    {
+      "studentId": 6,
+      "careerId": 1,
+      "firstName": "seis",
+      "lastName": "ddd",
+      "email": "7@gmail.com",
+      "isActive": true
+    }
+  ],
+  "careers": [
+    {
+      "careerId": 2,
+      "name": "TUP",
+      "isActive": true
+    },
+    {
+      "careerId": 1,
+      "name": "TUSI",
+      "isActive": true
+    }
+  ],
+  "subjects": [
+    {
+      "subjectId": 1,
+      "name": "ingles2"
+    },
+    {
+      "subjectId": 2,
+      "name": "mate3"
+    },
+    {
+      "subjectId": 3,
+      "name": "lab5"
+    },
+    {
+      "subjectId": 4,
+      "name": "operativa"
+    }
+  ],
+  "scores": [
+    {
+      "email": "ignachy01@gmail.com",
+      "subjectId": "3",
+      "scoreNumber": 2,
+      "id": 1
+    },
+    {
+      "email": "ignachy01@gmail.com",
+      "subjectId": "1",
+      "scoreNumber": 2,
+      "id": 2
+    },
+    {
+      "email": "ignachy01@gmail.com",
+      "subjectId": "2",
+      "scoreNumber": 3,
+      "id": 3
+    }
+  ]
 }

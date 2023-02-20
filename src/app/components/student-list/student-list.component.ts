@@ -19,7 +19,7 @@ export class StudentListComponent implements OnInit {
     this.getStudents();
 
     this.getCareers();
-    this.studentService.getStudentsService().subscribe((tareas) => (this.studentList = tareas))    
+    //this.studentService.getStudentsService().subscribe((tareas) => (this.studentList = tareas))    
     
   }
 
@@ -28,7 +28,7 @@ export class StudentListComponent implements OnInit {
       
       this.studentList = response;
 
-      this.studentList = this.studentList.filter( student => student.careerId !== null && student.isActive === true);
+      this.studentList = this.studentList.filter( student => student.careerId !== null && student.isActive === true);      
     });
   }
 
