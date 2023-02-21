@@ -31,10 +31,13 @@ export class ScoreAddComponent implements OnInit {
     this.getAllSubjects();
     
     this.scoreForm = new FormGroup({
-      email: new FormControl('',[Validators.required, Validators.email], [this.customValidator.emailValidatorChar(this.studentService)]),
+      email: new FormControl('',[Validators.required, Validators.email], [this.customValidator.emailValidatorOk(this.studentService)]),
       subject: new FormControl('', [Validators.required]),
       score: new FormControl('', [Validators.required, Validators.min(1), Validators.max(10)])  
     })
+
+    console.log(this.scoreForm);
+    
   }
 
   get email() { return this.scoreForm.get('email'); }

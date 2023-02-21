@@ -26,7 +26,7 @@
           <div class="alert alert-danger" role="alert" *ngIf="email.errors?.required">
               Email is required
           </div>
-          <div class="alert alert-danger" role="alert" *ngIf="email.errors?.emailValidatorChar">
+          <div class="alert alert-danger" role="alert" *ngIf="email.errors?.existStudent">
             Email is not in the db
         </div>
         </div>
